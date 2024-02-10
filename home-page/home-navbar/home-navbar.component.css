@@ -1,0 +1,32 @@
+nav{
+    font-size: 1.3vi;
+    background-color: rgba(0, 0, 0, 0.803);
+    
+    
+}
+.nav-item
+{
+    color: white;
+    position: static;
+}
+.nav-item:hover,.nav-item:focus{
+    color: white;
+    /* font-size: 1.4vi; */
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px white;
+    
+}
+.navbar-brand
+{
+    color: white;
+    font-size: 1.5vi;
+    margin-right: 25vi;
+}
+.navbar-brand:hover
+{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+}
+.toggler-btn{
+    color: white;
+}

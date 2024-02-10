@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home-content.component.css">
+
+</head>
+
+<body>
+    <div class='background'>
+        <app-home-navbar></app-home-navbar>
+
+        <div class='card1 col-7'>
+            <form ng-submit="search()">
+                <div class='search'>
+                    <select ng-model="selectedBrand" ng-options="brand.label for brand in carBrands">
+                        <option value="">Select Brand</option>
+                    </select>
+                    <select ng-model="selectedType">
+                        <option value="">Type</option>
+                        <option value="suv">Suv</option>
+                        <option value="non-suv">Non-Suv</option>
+                    </select>
+                    <input type='submit' value='Search' />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
