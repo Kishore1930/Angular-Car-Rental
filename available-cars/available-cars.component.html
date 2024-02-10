@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="available-cars.component.css">
+
+</head>
+
+<body>
+    <!-- book-now.component.html -->
+    <div class="book-now-container">
+        <div class="book-now">
+            <button (click)="closeBookingForm()" class="cross"><i class="fa-solid fa-xmark"></i></button>
+            <table class="table book-table border">
+                <tr>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Car Type</th>
+                    <th>Price/Day</th>
+                    <th>Tax</th>
+                    <th>Discount</th>
+                    <th>Total Price</th>
+                </tr>
+                <tr>
+                    <td>{{ obj.brand }}</td>
+                    <td>{{ obj.model }}</td>
+                    <td>{{ obj.car }}</td>
+                    <td>Rs.{{ obj.price }}</td>
+                    <td>{{ obj.tax }}%</td>
+                    <td>{{ obj.discount }}%</td>
+                    <td>Rs.{{ obj.totalprice }}</td>
+                </tr>
+            </table>
+            On which date do you want?
+            <!--  The below input tag code got error by using ngmodel=td........So I removed and used below that-->
+            <!-- <input type="date" class="date-field" [(ngModel)]="td" required/> -->
+            <input type="date" class="date-field" required />
+            <button (click)="confirmBookNowBtn()" class="btn btn-success mt-2">Book</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
